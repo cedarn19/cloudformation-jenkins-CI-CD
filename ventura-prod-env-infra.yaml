@@ -818,6 +818,14 @@ Resources:
         Value: venturaproddb
     DeletionPolicy: Snapshot
 
+  s3Bucket:
+    Type: AWS::S3::Bucket
+    Properties: 
+      BucketName: venturaprod3bucket
+      Tags:
+        - Key: Name
+          Value: Prod-logs
+
  
 
 Outputs: {}
